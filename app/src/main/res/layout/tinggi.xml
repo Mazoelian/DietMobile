@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/tinggi">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berapa tinggi Anda?"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000" />
+
+    <!-- Toggle Button untuk memilih cm/ft -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="cm"
+            android:textOff="cm"
+            android:checked="true" />
+
+    </LinearLayout>
+
+    <!-- Container untuk NumberPicker dan ImageView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <!-- NumberPicker -->
+        <NumberPicker
+            android:id="@+id/numberTinggi"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_height="200dp" />
+
+        <!-- ImageView -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:src="@drawable/male"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="16dp" />
+
+    </LinearLayout>
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/continueTinggi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanjut"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:layout_marginHorizontal="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

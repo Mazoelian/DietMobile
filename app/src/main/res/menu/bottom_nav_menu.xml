@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_resep"
+        android:icon="@drawable/ic_food"
+        android:title="Resep" />
+
+    <item
+        android:id="@+id/nav_program"
+        android:icon="@drawable/ic_program"
+        android:title="Program" />
+
+    <item
+        android:id="@+id/nav_laporkan"
+        android:icon="@drawable/ic_laporan"
+        android:title="Laporkan" />
+
+    <item
+        android:id="@+id/nav_saya"
+        android:icon="@drawable/ic_akun"
+        android:title="Saya" />
+</menu>

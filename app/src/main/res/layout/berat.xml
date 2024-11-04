@@ -1,0 +1,154 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F2F2"
+    android:id="@+id/berat"
+    android:padding="16dp">
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berapa berat Anda saat ini?"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Toggle Button for kg and lbs -->
+    <LinearLayout
+        android:id="@+id/toggleGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp">
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="kg"
+            android:textOff="kg"
+            android:checked="true" />
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="lbs"
+            android:textOff="lbs"
+            android:checked="true" />
+    </LinearLayout>
+
+    <!-- Current Weight Text -->
+    <TextView
+        android:id="@+id/currentWeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="65.2"
+        android:textSize="36sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"/>
+
+    <!-- SeekBar for Weight Selection -->
+    <SeekBar
+        android:id="@+id/weightSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="200"
+        android:progress="65"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- BMI Indicator Container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#DDDDDD"
+        android:layout_marginHorizontal="8dp"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+
+        <!-- BMI Value and Description -->
+        <TextView
+            android:id="@+id/bmiValueText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22.3"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/bmiLabelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI saat ini"
+            android:gravity="center"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_gravity="center_horizontal"/>
+
+        <!-- BMI Range Indicator -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <!-- Colored Sections -->
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#00BCD4"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#4CAF50"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#FFEB3B"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#FF9800"/>
+            <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:background="#F44336"/>
+        </LinearLayout>
+
+        <!-- BMI Description Text -->
+        <TextView
+            android:id="@+id/bmiDescriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anda punya postur yang keren! Pertahankan!"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanjut"
+        android:backgroundTint="#000000"
+        android:layout_marginHorizontal="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
