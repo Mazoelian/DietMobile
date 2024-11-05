@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MingguActivity extends AppCompatActivity {
+public class MingguActivity3 extends AppCompatActivity {
     private boolean isChecked = false; // Track the state of the button
     private LinearLayout buttonLayout; // Reference to the layout for background change
     private ImageView checkButton; // Reference to the check button
@@ -16,7 +16,7 @@ public class MingguActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.minggu);
+        setContentView(R.layout.minggu2);
 
         buttonLayout = findViewById(R.id.btncentang); // Get the layout reference
         checkButton = findViewById(R.id.checkMakanSiang); // Get the button reference

@@ -1,186 +1,992 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="16dp"
-    android:id="@+id/minggu2"
     android:background="#EFEFEF">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Hari 1 - Senin -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HARI 8 - 14"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="#4CAF50"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="0dp"
+                android:layout_marginBottom="16dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:background="#4CAF50">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Menu Standar"
+                        android:fontFamily="@font/poppins_bold"
+                        android:background="#4CAF50"
+                        android:padding="8dp"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginEnd="8dp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="HARI - SENIN"
+                android:textColor="#4CAF50"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Sarapan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sarapan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_breakfast"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="1 cangkir teh atau kopi hitam tanpa gula dan susu\nBubur havermut"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Cemilan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="8dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cemilan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_snack"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Kacang pohon apa saja tanpa garam\n1 potong keju (asin atau rendah lemak lebih baik)"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Siang -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Siang"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_makan"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="2 potong roti panggang gandum utuh dengan sayuran (bawang bombai, tomat, daun selada, dsb.)\nDaging tanpa lemak apa saja (sapi, dada ayam, domba, steik sancan, dsb.), panggang atau rebus"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Malam -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Malam"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_lunch"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="2 potong roti panggang gandum utuh dengan sayuran (bawang bombai, tomat, daun selada, dsb.)\nDaging tanpa lemak apa saja (sapi, dada ayam, domba, steik sancan, dsb.), panggang atau rebus"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Hari 2 - Selasa -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HARI - SELASA"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="#4CAF50"/>
+
+            <!-- Repeat meal structure for Selasa -->
+            <!-- Sarapan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sarapan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_breakfast"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="1 cangkir teh atau kopi hitam tanpa gula dan susu\nOatmeal dengan buah-buahan"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Cemilan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="8dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cemilan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_snack"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Yogurt tanpa gula dengan sedikit madu"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Siang -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Siang"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_makan"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Salad sayuran segar dengan ayam panggang"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Malam -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Malam"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_lunch"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Ikan bakar dengan sayuran kukus"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Repeat structure for Hari 3 - Rabu to Hari 7 - Minggu -->
+
+            <!-- Example for Hari 3 - Rabu -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HARI - RABU"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="#4CAF50"/>
+
+            <!-- Sarapan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sarapan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_breakfast"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Smoothie buah dengan yogurt"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Cemilan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="8dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cemilan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_snack"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Beberapa potong buah segar"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Siang -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Siang"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_makan"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Nasi merah dengan tahu dan sayuran"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Malam -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Malam"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_lunch"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Pasta sayuran dengan saus tomat"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Continue similarly for Hari 4 - Kamis, Hari 5 - Jumat, Hari 6 - Sabtu, Hari 7 - Minggu -->
+
+            <!-- Example for Hari 4 - Kamis -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HARI - KAMIS"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="#4CAF50"/>
+
+            <!-- Sarapan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sarapan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_breakfast"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Roti bakar dengan selai kacang"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Cemilan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="8dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cemilan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_snack"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="1 buah pisang"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Siang -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Siang"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_makan"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Nasi putih dengan ikan teri dan sayuran"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Malam -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Malam"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_lunch"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Sop sayuran dengan roti"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Repeat structure for Hari 5 - Jumat, Hari 6 - Sabtu, and Hari 7 - Minggu -->
+
+            <!-- Placeholder for Makan Malam for Hari 5 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HARI - JUMAT"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="#4CAF50"/>
+
+            <!-- Example Meal Structure -->
+            <!-- Sarapan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sarapan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_breakfast"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Bubur ayam"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Cemilan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="8dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cemilan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_snack"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="1 buah pisang"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Siang -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Siang"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_makan"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Nasi putih dengan ikan teri dan sayuran"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Malam -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Malam"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_lunch"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Sop sayuran dengan roti"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Continue adding similar meal structures for Hari 6 and Hari 7 -->
+
+            <!-- Example for Hari 6 - Sabtu -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HARI - SABTU"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="#4CAF50"/>
+
+            <!-- Repeat the structure for each meal -->
+            <!-- Example Sarapan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sarapan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_breakfast"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="2 butir telur rebus dengan sayuran"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Cemilan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="8dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cemilan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_snack"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="1 buah pisang"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Siang -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Siang"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_makan"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Nasi putih dengan ikan teri dan sayuran"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Malam -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Malam"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_lunch"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Sop sayuran dengan roti"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Example for Hari 7 - Minggu -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HARI - MINGGU"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginHorizontal="8dp"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:textColor="#4CAF50"/>
+
+            <!-- Repeat structure for meals for Hari 7 -->
+            <!-- Sarapan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sarapan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_breakfast"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Pancake dengan sirup maple"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Cemilan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="8dp"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cemilan"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_snack"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="1 buah pisang"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Siang -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="20dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Siang"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_makan"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Nasi putih dengan ikan teri dan sayuran"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+            <!-- Makan Malam -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="65dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makan Malam"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:drawableLeft="@drawable/ic_lunch"
+                    android:drawablePadding="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Sop sayuran dengan roti"
+                    android:layout_marginTop="8dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <!-- Hari 1 -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="HARI 8 - 14"
-            android:fontFamily="@font/poppins_bold"
-            android:layout_marginHorizontal="8dp"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp"
-            android:textColor="#4CAF50"/>
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="0dp"
-            android:layout_marginBottom="16dp">
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        android:backgroundTint="#FFFFFF">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="8dp"
-            android:background="#4CAF50">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Menu Standar"
-                android:fontFamily="@font/poppins_bold"
-                android:background="#4CAF50"
-                android:padding="8dp"
-                android:textColor="#FFFFFF"
-                android:layout_marginEnd="8dp" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
-
-
-    <!-- Sarapan -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:orientation="vertical"
-            android:background="#FFFFFF"
-            android:padding="16dp"
-            android:layout_marginBottom="16dp"
-            android:elevation="2dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Sarapan"
-                android:fontFamily="@font/poppins_bold"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:drawableLeft="@drawable/ic_breakfast"
-                android:drawablePadding="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="1 cangkir teh atau kopi hitam tanpa gula dan susu\nBubur havermut"
-                android:layout_marginTop="8dp"/>
-        </LinearLayout>
-
-        <!-- Cemilan -->
-        <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/btncentang"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginHorizontal="8dp"
-            android:background="#FFFFFF"
-            android:padding="16dp"
-            android:layout_marginBottom="16dp"
-            android:elevation="2dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cemilan"
-                android:fontFamily="@font/poppins_bold"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:drawableLeft="@drawable/ic_snack"
-                android:drawablePadding="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Kacang pohon apa saja tanpa garam\n1 potong keju (asin atau rendah lemak lebih baik)"
-                android:layout_marginTop="8dp"/>
-        </LinearLayout>
-
-        <!-- Makan Siang -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:orientation="vertical"
-            android:background="#FFFFFF"
-            android:padding="16dp"
-            android:layout_marginBottom="20dp"
-            android:elevation="2dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Makan Siang"
-                android:fontFamily="@font/poppins_bold"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:drawableLeft="@drawable/ic_makan"
-                android:drawablePadding="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="2 potong roti panggang gandum utuh dengan sayuran (bawang bombai, tomat, daun selada, dsb.)\nDaging tanpa lemak apa saja (sapi, dada ayam, domba, steik sancan, dsb.), panggang atau rebus"
-                android:layout_marginTop="8dp"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="8dp"
-            android:orientation="vertical"
-            android:background="#FFFFFF"
-            android:padding="16dp"
-            android:layout_marginBottom="20dp"
-            android:elevation="2dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Makan Malam"
-                android:fontFamily="@font/poppins_bold"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:drawableLeft="@drawable/ic_lunch"
-                android:drawablePadding="8dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_regular"
-                android:text="2 potong roti panggang gandum utuh dengan sayuran (bawang bombai, tomat, daun selada, dsb.)\nDaging tanpa lemak apa saja (sapi, dada ayam, domba, steik sancan, dsb.), panggang atau rebus"
-                android:layout_marginTop="8dp"/>
-        </LinearLayout>
-
-
-        <!-- Lanjutkan untuk Hari 2 sampai Hari 7 dengan struktur serupa -->
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#FFFFFF"
-            android:layout_gravity="center_horizontal"
             android:gravity="center"
             android:padding="16dp"
-            android:layout_marginBottom="16dp"
-            android:elevation="2dp">
+            android:background="#FFFFFF">
 
             <ImageView
                 android:id="@+id/checkMakanSiang"
@@ -188,9 +994,7 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_check"
                 android:visibility="visible"/>
-
         </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
-
-    </LinearLayout>
-</ScrollView>
+    </RelativeLayout>

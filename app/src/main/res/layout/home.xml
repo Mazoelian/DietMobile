@@ -90,6 +90,7 @@
                 android:layout_columnWeight="1">
 
                 <TextView
+                    android:id="@+id/btnMinggu2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Minggu 2"
@@ -109,6 +110,7 @@
                 android:layout_columnWeight="1">
 
                 <TextView
+                    android:id="@+id/btnMinggu3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Minggu 3"
@@ -128,6 +130,7 @@
                 android:layout_columnWeight="1">
 
                 <TextView
+                    android:id="@+id/btnMinggu4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Minggu 4"

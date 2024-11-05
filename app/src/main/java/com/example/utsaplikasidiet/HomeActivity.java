@@ -19,10 +19,38 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.home);
 
         TextView continueTahun = findViewById(R.id.btnMinggu1);
+        TextView continueTahun2 = findViewById(R.id.btnMinggu2);
+        TextView continueTahun3 = findViewById(R.id.btnMinggu3);
+        TextView continueTahun4 = findViewById(R.id.btnMinggu4);
+
         continueTahun.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this, MingguActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        continueTahun2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, MingguActivity2.class);
+                startActivity(intent);
+            }
+        });
+
+        continueTahun3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, MingguActivity3.class);
+                startActivity(intent);
+            }
+        });
+
+        continueTahun4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, MingguActivity4.class);
                 startActivity(intent);
             }
         });
