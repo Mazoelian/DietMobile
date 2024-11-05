@@ -23,6 +23,13 @@ public class TahunActivity extends AppCompatActivity {
             }
         });
 
+        NumberPicker numberPickerUmur = findViewById(R.id.numberUmur);
+        if (numberPickerUmur != null) {
+            numberPickerUmur.setMinValue(1);  // Atur nilai minimum
+            numberPickerUmur.setMaxValue(64);  // Atur nilai maksimum
+            numberPickerUmur.setValue(20);     // Atur nilai default (opsional)
+        }
+
         NumberPicker numberPicker = findViewById(R.id.numberTahun);
         if (numberPicker != null) {
             numberPicker.setMinValue(1990);  // Atur nilai minimum

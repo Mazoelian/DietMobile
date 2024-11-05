@@ -17,11 +17,38 @@ public class ProgramActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.olahraga);
 
-        TextView continueOlahraga = findViewById(R.id.programMinggu1);
-        continueOlahraga.setOnClickListener(new View.OnClickListener() {
+        TextView continueMinggu1 = findViewById(R.id.programMinggu1);
+        continueMinggu1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ProgramActivity.this, LatihanActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView continueMinggu2 = findViewById(R.id.programMinggu2);
+        continueMinggu2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProgramActivity.this, Latihan2Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView continueMinggu3 = findViewById(R.id.programMinggu3);
+        continueMinggu3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProgramActivity.this, Latihan3Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView continueMinggu4 = findViewById(R.id.programMinggu4);
+        continueMinggu4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProgramActivity.this, Latihan4Activity.class);
                 startActivity(intent);
             }
         });

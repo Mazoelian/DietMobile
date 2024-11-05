@@ -8,6 +8,14 @@
     android:background="#F2F2F2"
     android:padding="16dp">
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="36"
+        android:layout_marginBottom="16dp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -56,13 +64,12 @@
                 android:layout_marginBottom="8dp"
                 android:gravity="center_vertical">
                 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/radioTubuh"
+                    android:id="@+id/checkTubuh"
                     android:text="Tubuh Penuh"
-                    android:textSize="14sp"
-                    android:buttonTint="#CCCCCC"/>
+                    android:textSize="14sp" />
             </androidx.cardview.widget.CardView>
             
             <androidx.cardview.widget.CardView
@@ -75,13 +82,12 @@
                 android:layout_marginBottom="8dp"
                 android:gravity="center_vertical">
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/radioLengan"
+                    android:id="@+id/checkLengan"
                     android:text="Lengan"
-                    android:textSize="14sp"
-                    android:buttonTint="#CCCCCC"/>
+                    android:textSize="14sp" />
             </androidx.cardview.widget.CardView>
             
             <androidx.cardview.widget.CardView
@@ -94,34 +100,13 @@
                 android:layout_marginBottom="8dp"
                 android:gravity="center_vertical">
                 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/radioPerut"
+                    android:id="@+id/checkPerut"
                     android:text="Otot perut"
                     android:textSize="14sp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:buttonTint="#CCCCCC"/>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_marginHorizontal="8dp"
-                app:cardElevation="4dp"
-                app:cardCornerRadius="16dp"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="8dp"
-                android:gravity="center_vertical">
-
-                <RadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/radioBokong"
-                    android:text="Bokong"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:buttonTint="#CCCCCC"/>
+                    android:fontFamily="@font/poppins_regular" />
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
@@ -134,14 +119,13 @@
                 app:cardCornerRadius="16dp"
                 android:gravity="center_vertical">
 
-                <RadioButton
+                <CheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/radioKaki"
+                    android:id="@+id/checkKaki"
                     android:text="Kaki"
                     android:textSize="14sp"
-                    android:fontFamily="@font/poppins_regular"
-                    android:buttonTint="#CCCCCC"/>
+                    android:fontFamily="@font/poppins_regular" />
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>

@@ -8,8 +8,6 @@
     android:background="#f2f2f2"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -22,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:background="#6200EA"
+            android:background="#31511E"
             android:padding="16dp">
             <ImageView
                 android:layout_width="24dp"
@@ -53,7 +51,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Latihan Tubuh Penuh"
+                    android:text="Latihan Lengan"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular"
                     android:textColor="#FFFFFF"
@@ -64,7 +62,7 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/female"
+                android:src="@drawable/male"
                 android:scaleType="centerCrop" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -86,21 +84,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4 Menit, 4 Latihan"
+                android:text="33 Menit, 4 Latihan"
                 android:textSize="14sp"
                 android:fontFamily="@font/poppins_bold"
                 android:textStyle="bold"
                 android:textColor="#333333"
                 android:layout_marginBottom="8dp" />
 
-            <!-- Item latihan -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_marginBottom="8dp">
 
-                <!-- Gambar latihan -->
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
@@ -125,7 +121,51 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="30 s"
+                        android:text="10 m"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="#666666" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#DDDDDD"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <!-- Gambar latihan -->
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/plank"
+                    android:layout_marginEnd="16dp" />
+
+                <!-- Detail latihan -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plank"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#333333" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3 m"
                         android:textSize="14sp"
                         android:fontFamily="@font/poppins_regular"
                         android:textColor="#666666" />
@@ -169,51 +209,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="30 s"
-                        android:textSize="14sp"
-                        android:fontFamily="@font/poppins_regular"
-                        android:textColor="#666666" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#DDDDDD"
-                android:layout_marginBottom="8dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="8dp">
-
-                <!-- Gambar latihan -->
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:src="@drawable/squad"
-                    android:layout_marginEnd="16dp" />
-
-                <!-- Detail latihan -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Squad Jump"
-                        android:fontFamily="@font/poppins_bold"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#333333" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="30 s"
+                        android:text="10 m"
                         android:fontFamily="@font/poppins_regular"
                         android:textSize="14sp"
                         android:textColor="#666666" />
@@ -249,7 +245,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Berlari"
+                        android:text="Angkat Lutut / Berlari"
                         android:fontFamily="@font/poppins_bold"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -258,7 +254,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="30 s"
+                        android:text="10 m"
                         android:fontFamily="@font/poppins_regular"
                         android:textSize="14sp"
                         android:textColor="#666666" />
@@ -282,15 +278,13 @@
         android:layout_height="0dp"
         android:layout_weight="1"/>
 
-
-    <!-- Button at the bottom -->
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Mulai"
         android:layout_marginTop="24dp"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#6200EA"
+        android:backgroundTint="#31511E"
         android:layout_marginHorizontal="8dp"
         android:fontFamily="@font/poppins_bold" />
 

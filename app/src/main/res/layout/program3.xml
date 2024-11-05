@@ -8,8 +8,6 @@
     android:background="#f2f2f2"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -22,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:background="#6200EA"
+            android:background="#257180"
             android:padding="16dp">
             <ImageView
                 android:layout_width="24dp"
@@ -53,7 +51,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Latihan Tubuh Penuh"
+                    android:text="Latihan Otot Perut"
                     android:textSize="14sp"
                     android:fontFamily="@font/poppins_regular"
                     android:textColor="#FFFFFF"
@@ -86,7 +84,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4 Menit, 4 Latihan"
+                android:text="23 Menit, 3 Latihan"
                 android:textSize="14sp"
                 android:fontFamily="@font/poppins_bold"
                 android:textStyle="bold"
@@ -125,7 +123,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="30 s"
+                        android:text="10 m"
                         android:textSize="14sp"
                         android:fontFamily="@font/poppins_regular"
                         android:textColor="#666666" />
@@ -148,7 +146,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/pull"
+                    android:src="@drawable/plank"
                     android:layout_marginEnd="16dp" />
 
                 <!-- Detail latihan -->
@@ -160,7 +158,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Pull Up"
+                        android:text="Plank"
                         android:fontFamily="@font/poppins_bold"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -169,7 +167,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="30 s"
+                        android:text="3 m"
                         android:textSize="14sp"
                         android:fontFamily="@font/poppins_regular"
                         android:textColor="#666666" />
@@ -188,14 +186,12 @@
                 android:orientation="horizontal"
                 android:layout_marginBottom="8dp">
 
-                <!-- Gambar latihan -->
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/squad"
+                    android:src="@drawable/sit"
                     android:layout_marginEnd="16dp" />
 
-                <!-- Detail latihan -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
@@ -204,7 +200,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Squad Jump"
+                        android:text="Sit Up"
                         android:fontFamily="@font/poppins_bold"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -213,7 +209,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="30 s"
+                        android:text="10 m"
                         android:fontFamily="@font/poppins_regular"
                         android:textSize="14sp"
                         android:textColor="#666666" />
@@ -226,53 +222,6 @@
                 android:layout_height="1dp"
                 android:background="#DDDDDD"
                 android:layout_marginBottom="8dp" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginBottom="8dp">
-
-                <!-- Gambar latihan -->
-                <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:src="@drawable/run"
-                    android:layout_marginEnd="16dp" />
-
-                <!-- Detail latihan -->
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Berlari"
-                        android:fontFamily="@font/poppins_bold"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:textColor="#333333" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="30 s"
-                        android:fontFamily="@font/poppins_regular"
-                        android:textSize="14sp"
-                        android:textColor="#666666" />
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="#DDDDDD"
-                android:layout_marginBottom="8dp" />
-            <!-- Ulangi layout untuk latihan berikutnya -->
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -290,7 +239,7 @@
         android:text="Mulai"
         android:layout_marginTop="24dp"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#6200EA"
+        android:backgroundTint="#257180"
         android:layout_marginHorizontal="8dp"
         android:fontFamily="@font/poppins_bold" />
 

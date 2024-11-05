@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal"
-            android:background="#6200EA"
+            android:background="#740938"
             android:padding="16dp">
             <ImageView
                 android:layout_width="24dp"
@@ -85,7 +85,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4 Menit, 4 Latihan"
+                android:text="40 Menit, 4 Latihan"
                 android:textSize="14sp"
                 android:fontFamily="@font/poppins_bold"
                 android:textStyle="bold"
@@ -124,7 +124,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="30 s"
+                        android:text="10 m"
                         android:textSize="14sp"
                         android:fontFamily="@font/poppins_regular"
                         android:textColor="#666666" />
@@ -168,7 +168,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="30 s"
+                        android:text="10 m"
                         android:textSize="14sp"
                         android:fontFamily="@font/poppins_regular"
                         android:textColor="#666666" />
@@ -212,7 +212,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="30 s"
+                        android:text="10 m"
                         android:fontFamily="@font/poppins_regular"
                         android:textSize="14sp"
                         android:textColor="#666666" />
@@ -257,7 +257,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="30 s"
+                        android:text="10 m"
                         android:fontFamily="@font/poppins_regular"
                         android:textSize="14sp"
                         android:textColor="#666666" />
@@ -289,7 +289,7 @@
         android:text="Mulai"
         android:layout_marginTop="24dp"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#6200EA"
+        android:backgroundTint="#740938"
         android:layout_marginHorizontal="8dp"
         android:fontFamily="@font/poppins_bold" />
 

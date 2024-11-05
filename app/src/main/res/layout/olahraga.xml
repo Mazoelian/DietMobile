@@ -15,6 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="PROGRAM"
+        android:textColor="#000"
         android:fontFamily="@font/poppins_bold"
         android:layout_marginHorizontal="8dp"
         android:textSize="24sp"
@@ -48,7 +49,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="LATIHAN TUBUH PENUH"
+                    android:text="LATIHAN TUBUH"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:textColor="#FFFFFF" />
@@ -93,6 +94,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_bold"
                 android:text="Minggu 1"
+                android:textColor="#000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
@@ -100,7 +102,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_regular"
-                android:text="7 Latihan"
+                android:text="4 Latihan"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -122,9 +124,11 @@
             android:padding="16dp">
 
             <TextView
+                android:id="@+id/programMinggu2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Minggu 2"
+                android:textColor="#000"
                 android:fontFamily="@font/poppins_bold"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -132,7 +136,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7 Latihan"
+                android:text="4 Latihan"
                 android:fontFamily="@font/poppins_regular"
                 android:textSize="14sp" />
 
@@ -155,9 +159,11 @@
             android:padding="16dp">
 
             <TextView
+                android:id="@+id/programMinggu3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Minggu 3"
+                android:textColor="#000"
                 android:fontFamily="@font/poppins_bold"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -165,7 +171,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="7 Latihan"
+                android:text="3 Latihan"
                 android:fontFamily="@font/poppins_regular"
                 android:textSize="14sp" />
 
@@ -188,9 +194,11 @@
             android:padding="16dp">
 
             <TextView
+                android:id="@+id/programMinggu4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Minggu 4"
+                android:textColor="#000"
                 android:fontFamily="@font/poppins_bold"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -198,7 +206,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hari Istirahat"
+                android:text="3 Latihan"
                 android:fontFamily="@font/poppins_regular"
                 android:textSize="14sp" />
 

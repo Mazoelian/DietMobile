@@ -6,6 +6,15 @@
     android:background="#F2F2F2"
     android:id="@+id/tinggi">
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="64"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="16dp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,7 +55,7 @@
         <NumberPicker
             android:id="@+id/numberTinggi"
             android:layout_width="wrap_content"
-            android:layout_marginHorizontal="16dp"
+            android:layout_marginHorizontal="32dp"
             android:layout_height="200dp" />
 
         <!-- ImageView -->
@@ -67,6 +76,7 @@
         android:text="Lanjut"
         android:layout_marginTop="16dp"
         android:backgroundTint="#000000"
+        android:layout_marginBottom="16dp"
         android:layout_marginHorizontal="8dp"
         android:fontFamily="@font/poppins_bold"
         android:textColor="#FFFFFF" />

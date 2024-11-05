@@ -33,6 +33,9 @@
         <activity android:name=".LaporanActivity"/>
         <activity android:name=".ProfileActivity"/>
         <activity android:name=".LatihanActivity"/>
+        <activity android:name=".Latihan2Activity"/>
+        <activity android:name=".Latihan3Activity"/>
+        <activity android:name=".Latihan4Activity"/>
         <activity android:name=".MainActivity"/>
     </application>
 
